@@ -72,7 +72,11 @@ const removeAll = (index) => {
         <thead></thead>
         <tbody>
           <tr class="" v-for="(row, index) in rows" :key="index">
-            <td class="border border-slate-600" v-for="column in columns">
+            <td
+              class="border border-slate-600"
+              v-for="column in columns"
+              :key="index"
+            >
               <input
                 type="text"
                 class="h-auto border-none focus:outline-none text-sm font-semibold px-1"
